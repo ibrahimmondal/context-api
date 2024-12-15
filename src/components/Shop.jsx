@@ -22,7 +22,7 @@ export default function Shop({cart, setCart}) {
   return (
    <div className={dark ? "dark" : "light"}>
      <div className=" dark:bg-gray-800">
-      <div className="grid grid-cols-3 gap-4 max-w-[1280px] mx-auto pt-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2  gap-4 max-w-[1280px] mx-auto pt-8 px-4">
       {procucts.map((procuct) => (
         <SingleProduct product={procuct} key={procuct.id} cart={cart} setCart={setCart} />
       ))}

@@ -11,7 +11,7 @@ const {dark, toggleMode} = useContext(darkTheme);
     <div className={dark ? "dark" : "light"}>
       <header className="bg-white dark:bg-gray-800">
   <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-    <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
+    <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between items-center">
       <div>
         <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl dark:text-white">Blog Posts</h1>
 
@@ -20,7 +20,7 @@ const {dark, toggleMode} = useContext(darkTheme);
         </p>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 flex-col md:flex md:flex-row justify-center">
         <Link to={"/"}>
         <button
           className="inline-flex items-center justify-center gap-1.5 rounded border border-gray-200 bg-white px-5 py-3 text-gray-900 transition hover:text-gray-700 focus:outline-none focus:ring"
